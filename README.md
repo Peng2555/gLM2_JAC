@@ -9,7 +9,6 @@
 - **灵活的可视化**:
     - 绘制完整的正方形接触图。
     - 绘制指定蛋白质-核酸相互作用区域的子矩阵热力图。
-- **结构化代码**: 项目代码逻辑清晰，易于扩展和维护。
 
 ## 项目结构
 
@@ -19,7 +18,7 @@ glm2/
 ├── README.md           # 本说明文件
 ├── requirements.txt    # 项目依赖的Python包
 │
-├── data/               # (可选) 用于存放FASTA等格式的输入序列文件
+├── data/               # 用于存放FASTA等格式的输入序列文件
 │
 ├── models/
 │   └── gLM2_650M/      # 存放 gLM2-650M 模型文件
@@ -42,7 +41,7 @@ glm2/
 1.  **克隆或下载项目**
     ```bash
     # 如果你的项目在Git上
-    git clone [你的项目Git仓库地址]
+    git clone https://github.com/Peng2555/gLM2_JAC.git
     cd glm2
     ```
 
@@ -54,10 +53,10 @@ glm2/
     本项目推荐使用 Conda 管理环境，以避免包版本冲突。
     ```bash
     # 创建一个名为 "bg" (或你喜欢的名字) 的新环境
-    conda create -n bg python=3.12 -y
+    conda create -n gLM2 python=3.12 -y
 
     # 激活环境
-    conda activate bg
+    conda activate gLM2
     ```
 
 4.  **安装依赖包**
@@ -72,7 +71,7 @@ glm2/
 
 1.  **激活 Conda 环境**
     ```bash
-    conda activate bg
+    conda activate gLM2
     ```
 
 2.  **执行分析脚本**
